@@ -5,7 +5,7 @@
 * 改変対象OSS
   + typst(https://github.com/typst/typst)
 * 改変内容
-  + 
+  + 変更
 
 ## クイックスタート
 
