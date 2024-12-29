@@ -26,7 +26,8 @@ Typstは、最新のフォーマット処理を行うための新しいドキュ
 以下の手順で、改変済みTypst用Dockerイメージを試すことができる：
 
 ```
-
+docker pull kan190729/2024-k2210165-typst
+docker run -it --rm --name console kan190729/2024-k2210165-typst
 ```
 
 コンテナ内で以下を実行して動作を確認する：
@@ -44,25 +45,19 @@ make check
 1. コンテナ内でサンプルプロジェクトのディレクトリに移動する。
 
 ```
-
+cd artifact-evaluation/sample
 ```
 
 2. サンプルTypstファイル `main.typ` をビルドする。
 
 ```
-
+make build
 ```
 
 3. ビルドが成功したら、PDFファイルが `/artifact/sample/output.pdf` に生成されていることを確認する。
 
 ```
-
-```
-
-期待される出力例：
-
-```
-
+ls artifact-evaluation/sample/output.pdf
 ```
 
 4. ビルド生成物を削除する。
