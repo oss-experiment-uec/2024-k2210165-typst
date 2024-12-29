@@ -15,11 +15,11 @@ Typstは、最新のフォーマット処理を行うための新しいドキュ
 ### 改変内容
 
 - サンプルファイル `main.typ` をイメージ内の `/artifact-evaluation/sample/` ディレクトリに追加。
-- `Makefile` を `/artifact-evaluation/` ディレクトリに追加し、以下のコマンドを提供：
+- `Makefile` を `/artifact` ディレクトリに追加し、以下のコマンドを提供：
   - `make build`: TypstファイルをビルドしてPDFを生成。
   - `make clean`: ビルド生成物を削除。
 - `make check` でサンプルファイルのビルドを実行し、成功を確認する仕組みを追加。
-- 動作確認用に生成したPDFを `/artifact-evaluation/sample/output.pdf` に保存。
+- 動作確認用に生成したPDFを `/artifact/sample/output.pdf` に保存。
 
 ## クイックスタート
 
