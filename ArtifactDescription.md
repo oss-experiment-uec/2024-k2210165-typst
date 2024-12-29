@@ -42,31 +42,24 @@ make check
 
 以下の手順で、改変内容の効果を確認できる：
 
-1. コンテナ内でサンプルプロジェクトのディレクトリに移動する。
-
-```
-cd artifact-evaluation/sample
-```
-
-2. サンプルTypstファイル `main.typ` をビルドする。
+1. サンプルTypstファイル `main.typ` をビルドする。
 
 ```
 make build
 ```
-
-3. ビルドが成功したら、PDFファイルが `/artifact/sample/output.pdf` に生成されていることを確認する。
+2. ビルドが成功したら、PDFファイルが `/artifact/sample/output.pdf` に生成されていることを確認する。
 
 ```
-ls artifact-evaluation/sample/output.pdf
+ls sample/output.pdf
 ```
 
-4. ビルド生成物を削除する。
+3. ビルド生成物を削除する。
 
 ```
 make check
 ```
 
-5. 再度ビルドし、`make check` コマンドで動作確認を行う。
+4. 再度ビルドし、`make check` コマンドで動作確認を行う。
 
 ```
 make check
